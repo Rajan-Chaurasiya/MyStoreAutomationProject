@@ -2,6 +2,7 @@ package com.mystore.base;
 
 import com.mystore.actiondriver.Action;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -27,7 +28,6 @@ public class BaseClass {
             System.out.println("super constructor invoked");
             FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+"\\Configuration\\config.properties");
             prop.load(ip);
-            System.out.println("driver: "+driver);
         } catch (FileNotFoundException e){
             e.printStackTrace();
         }catch (IOException e){
@@ -40,21 +40,31 @@ public class BaseClass {
         WebDriverManager.chromedriver().setup();
         String browserName = prop.getProperty("browser");
 
-        if (browserName.contains("chrome")){
+        if (browserName.equalsIgnoreCase("chrome")){
+            WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
-        } else if (browserName.contains("FireFox")) {
+        } else if (browserName.equalsIgnoreCase("FireFox")) {
+            WebDriverManager.chromedriver().setup();
             driver = new FirefoxDriver();
-        } else if (browserName.contains("IE")) {
+        } else if (browserName.equalsIgnoreCase("IE")) {
+            WebDriverManager.chromedriver().setup();
             driver = new EdgeDriver();
         }
 
         Action.implicitWait(driver);
         driver.manage().deleteAllCookies();
         Action.pageLoadTimeOut(driver);
-
-        driver.get(prop.getProperty("url"));
         driver.manage().window().maximize();
+        driver.get(prop.getProperty("url"));
 
+
+    }
+
+    public String randomAlphaNumberic()
+    {
+        String generatedstring= RandomStringUtils.randomAlphabetic(3);
+        String generatednumber=RandomStringUtils.randomNumeric(3);
+        return (generatedstring+"."+generatednumber+"@gmail.com");
     }
 
 

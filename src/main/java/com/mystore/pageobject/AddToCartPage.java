@@ -33,13 +33,13 @@ public class AddToCartPage extends BasePage{
         Action.type(driver, selectQuanity, quanity);
     }
 
-    public void selectSize(String size){
-        Action.selectByVisibleText(driver, selectSizeElement, size);
+    public void selectSize(int size){
+        Action.selectByIndex(driver,selectSizeElement, 1);
     }
 
-//    public void selectColor(){
-//        Action.click(driver, selectColor);
-//    }
+    public void selectColor(){
+        Action.click(driver, selectColor);
+    }
 
     public void selectAddToCart(){
         Action.click(driver, addToCart);

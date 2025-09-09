@@ -10,8 +10,11 @@ public class SearchResultPage extends BasePage{
         super(driver);
     }
 
-    @FindBy(xpath = "(//img[@title='Printed Summer Dress'])[2]")
+    @FindBy(xpath = "(//img[@title='Printed Summer Dress'])[1]")
     WebElement productResult;
+
+    @FindBy(xpath = "//div[@class='bottom-pagination-content clearfix']//div[@class='product-count'][normalize-space()='Showing 1 - 3 of 3 items']")
+    WebElement pageCountFooter;
 
 
 
@@ -22,6 +25,19 @@ public class SearchResultPage extends BasePage{
     public void clickOnProduct(){
         Action.click(driver, productResult);
     }
+
+    public void waitforElement(){
+        Action.scrollByVisibilityOfElement(driver, pageCountFooter);
+    }
+
+    public void HoverOverProduct(){
+        Action.mouseHover(driver, productResult);
+    }
+
+    public void ScrollOverProductByPixel(){
+        Action.scrollByPixel(driver, 0, 400);
+    }
+
 
 
 }

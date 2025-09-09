@@ -5,8 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import java.util.logging.XMLFormatter;
-
 public class AccountPage extends BasePage{
     public AccountPage(WebDriver driver) {
         super(driver);
@@ -25,5 +23,9 @@ public class AccountPage extends BasePage{
 
     public boolean ValidateMyAccount(){
         return Action.isDisplayed(driver, myAccount);
+    }
+
+    public String getCurrentUrl(){
+        return driver.getCurrentUrl();
     }
 }

@@ -57,7 +57,12 @@ public class Action extends BaseClass {
 
     public static String getText(WebDriver driver, WebElement element){
 
-        return waitForElement(driver, element).getText();
+        try {
+            return waitForElement(driver, element).getText();
+        } catch (Exception e) {
+            throw new RuntimeException("Unable to get Text from field",e);
+        }
+
 
     }
 
@@ -67,7 +72,7 @@ public class Action extends BaseClass {
         select.selectByVisibleText(value);
     }
 
-    public static void selectByValue(WebDriver driver, WebElement element, String value){
+    public static void selectByValue(WebElement element, String value){
 
         Select select = new Select(waitForElement(driver, element));
         select.selectByValue(value);
@@ -75,7 +80,7 @@ public class Action extends BaseClass {
 
     public static void selectByIndex(WebDriver driver, WebElement element, int index){
 
-        Select select = new Select(waitForElement(driver, element));
+        Select select = new Select(element);
         select.selectByIndex(index);
     }
 
@@ -83,6 +88,12 @@ public class Action extends BaseClass {
     public static void mouseHover(WebDriver driver, WebElement element){
         Actions actions = new Actions(driver);
         actions.moveToElement(waitForElement(driver, element)).perform();
+    }
+
+    public static void scrollByPixel(WebDriver driver, int x, int y) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(" + x + "," + y + ");");
+        System.out.println("Scrolled by X=" + x + ", Y=" + y);
     }
 
     //Double Click
