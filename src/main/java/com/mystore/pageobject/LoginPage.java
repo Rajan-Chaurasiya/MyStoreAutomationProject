@@ -1,14 +1,17 @@
 package com.mystore.pageobject;
 
 import com.mystore.actiondriver.Action;
+import com.mystore.base.BaseClass;
 import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static com.mystore.base.BaseClass.getDriver;
+
 public class LoginPage extends BasePage{
-    public LoginPage(WebDriver driver) {
-        super(driver);
+    public LoginPage() {
+        super();
     }
 
     @FindBy(xpath = "//input[@id='email']")
@@ -28,7 +31,7 @@ public class LoginPage extends BasePage{
 
 
     public void login(String username, String password){
-        Action.type(driver,email_textBox, username);
+        Action.type(getDriver(),email_textBox, username);
         Action.type(driver, password_textBox, password);
         Action.click(driver, sign_in_Button);
     }

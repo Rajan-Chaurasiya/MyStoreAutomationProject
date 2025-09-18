@@ -18,23 +18,14 @@ public class SearchResultPageTest extends BaseClass {
     SearchResultPage searchResultPage;
     AddToCartPage addToCartPage;
 
-    @BeforeMethod
-    public void setUp(){
-        launchApp();
-    }
-
-    @AfterMethod
-    public void tearDown(){
-        driver.quit();
-    }
 
     @Test
     public void validateSearchResultPage(){
 
-        homePage = new HomePage(driver);
+        homePage = new HomePage();
         homePage.searchProduct("Printed Summer Dress");
 
-        searchResultPage = new SearchResultPage(driver);
+        searchResultPage = new SearchResultPage();
         searchResultPage.ScrollOverProductByPixel();
         Assert.assertTrue(searchResultPage.isProductAvailable());
 

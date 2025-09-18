@@ -1,0 +1,99 @@
+12:33:06.916 [main] INFO  com.mystore.base.BaseClass - ===== Test Suite Execution Started =====
+12:33:06.945 [main] INFO  com.mystore.base.BaseClass - ===== Starting Test Setup =====
+12:33:06.945 [main] INFO  com.mystore.base.BaseClass - Launching application on browser: chrome
+12:33:14.848 [main] INFO  com.mystore.base.BaseClass - ===== Closing Browser =====
+12:33:14.954 [main] INFO  com.mystore.base.BaseClass - ===== Starting Test Setup =====
+12:33:14.954 [main] INFO  com.mystore.base.BaseClass - Launching application on browser: chrome
+12:33:20.888 [main] INFO  com.mystore.base.BaseClass - ===== Closing Browser =====
+[2025-09-18 12:40:56] [INFO] BaseClass - ===== Test Suite Execution Started =====
+[2025-09-18 12:40:56] [INFO] BaseClass - Configuration file loaded successfully.
+[2025-09-18 12:40:56] [INFO] BaseClass - Configuration file loaded successfully.
+[2025-09-18 12:40:56] [INFO] BaseClass - ===== Starting Test Setup =====
+[2025-09-18 12:40:56] [INFO] BaseClass - Launching application on browser: chrome
+[2025-09-18 12:41:04] [INFO] BaseClass - Application launched successfully at: http://www.automationpractice.pl/index.php?
+[2025-09-18 12:41:04] [INFO] BaseClass - ===== Closing Browser =====
+[2025-09-18 12:41:04] [INFO] BaseClass - ===== Starting Test Setup =====
+[2025-09-18 12:41:04] [INFO] BaseClass - Launching application on browser: chrome
+[2025-09-18 12:41:09] [INFO] BaseClass - Application launched successfully at: http://www.automationpractice.pl/index.php?
+[2025-09-18 12:41:09] [INFO] BaseClass - ===== Closing Browser =====
+[2025-09-18 16:12:14] [INFO] BaseClass - ===== Test Suite Execution Started =====
+[2025-09-18 16:12:14] [INFO] BaseClass - Configuration file loaded successfully.
+[2025-09-18 16:12:14] [INFO] BaseClass - Configuration file loaded successfully.
+[2025-09-18 16:12:14] [INFO] BaseClass - ===== Starting Test Setup =====
+[2025-09-18 16:12:14] [INFO] BaseClass - Launching application on browser: chrome
+[2025-09-18 16:12:22] [INFO] BaseClass - Application launched successfully at: http://www.automationpractice.pl/index.php?
+[2025-09-18 16:12:22] [INFO] BaseClass - ===== Closing Browser =====
+[2025-09-18 16:12:35] [INFO] BaseClass - ===== Test Suite Execution Started =====
+[2025-09-18 16:12:35] [INFO] BaseClass - Configuration file loaded successfully.
+[2025-09-18 16:12:35] [INFO] BaseClass - Configuration file loaded successfully.
+[2025-09-18 16:12:35] [INFO] BaseClass - ===== Starting Test Setup =====
+[2025-09-18 16:12:35] [INFO] BaseClass - Launching application on browser: chrome
+[2025-09-18 16:12:41] [INFO] BaseClass - Application launched successfully at: http://www.automationpractice.pl/index.php?
+[2025-09-18 16:12:41] [INFO] BaseClass - ===== Closing Browser =====
+[2025-09-18 16:12:41] [INFO] BaseClass - ===== Starting Test Setup =====
+[2025-09-18 16:12:41] [INFO] BaseClass - Launching application on browser: chrome
+[2025-09-18 16:12:46] [INFO] BaseClass - Application launched successfully at: http://www.automationpractice.pl/index.php?
+[2025-09-18 16:12:46] [INFO] BaseClass - ===== Closing Browser =====
+[2025-09-18 16:26:42] [INFO] BaseClass - ===== Test Suite Execution Started =====
+[2025-09-18 16:26:42] [INFO] BaseClass - Configuration file loaded successfully.
+[2025-09-18 16:26:42] [INFO] BaseClass - Configuration file loaded successfully.
+[2025-09-18 16:26:42] [INFO] BaseClass - ===== Starting Test Setup =====
+[2025-09-18 16:26:42] [INFO] BaseClass - Launching application on browser: chrome
+[2025-09-18 16:26:48] [INFO] BaseClass - Application launched successfully at: http://www.automationpractice.pl/index.php?
+[2025-09-18 16:26:48] [INFO] BaseClass - ===== Closing Browser =====
+[2025-09-18 16:30:07] [INFO] BaseClass - ===== Test Suite Execution Started =====
+[2025-09-18 16:30:07] [INFO] BaseClass - Configuration file loaded successfully.
+[2025-09-18 16:30:07] [INFO] BaseClass - Configuration file loaded successfully.
+[2025-09-18 16:30:07] [INFO] BaseClass - ===== Starting Test Setup =====
+[2025-09-18 16:30:07] [INFO] BaseClass - Launching application on browser: chrome
+[2025-09-18 16:30:13] [INFO] BaseClass - Application launched successfully at: http://www.automationpractice.pl/index.php?
+[2025-09-18 16:30:27] [INFO] BaseClass - ===== Closing Browser =====
+[2025-09-18 16:30:32] [INFO] BaseClass - ===== Test Suite Execution Started =====
+[2025-09-18 16:30:32] [INFO] BaseClass - Configuration file loaded successfully.
+[2025-09-18 16:30:32] [INFO] BaseClass - Configuration file loaded successfully.
+[2025-09-18 16:30:32] [INFO] BaseClass - ===== Starting Test Setup =====
+[2025-09-18 16:30:32] [INFO] BaseClass - Launching application on browser: chrome
+[2025-09-18 16:30:38] [INFO] BaseClass - Application launched successfully at: http://www.automationpractice.pl/index.php?
+[2025-09-18 16:30:50] [INFO] BaseClass - ===== Closing Browser =====
+[2025-09-18 16:32:27] [INFO] BaseClass - ===== Test Suite Execution Started =====
+[2025-09-18 16:32:27] [INFO] BaseClass - Configuration file loaded successfully.
+[2025-09-18 16:32:27] [INFO] BaseClass - Configuration file loaded successfully.
+[2025-09-18 16:32:27] [INFO] BaseClass - ===== Starting Test Setup =====
+[2025-09-18 16:32:27] [INFO] BaseClass - Launching application on browser: chrome
+[2025-09-18 16:32:33] [INFO] BaseClass - Application launched successfully at: http://www.automationpractice.pl/index.php?
+[2025-09-18 16:32:45] [INFO] BaseClass - ===== Closing Browser =====
+[2025-09-18 16:33:02] [INFO] BaseClass - ===== Test Suite Execution Started =====
+[2025-09-18 16:33:02] [INFO] BaseClass - Configuration file loaded successfully.
+[2025-09-18 16:33:02] [INFO] BaseClass - Configuration file loaded successfully.
+[2025-09-18 16:33:02] [INFO] BaseClass - ===== Starting Test Setup =====
+[2025-09-18 16:33:02] [INFO] BaseClass - Launching application on browser: chrome
+[2025-09-18 16:33:08] [INFO] BaseClass - Application launched successfully at: http://www.automationpractice.pl/index.php?
+[2025-09-18 16:33:22] [INFO] BaseClass - ===== Closing Browser =====
+[2025-09-18 16:33:35] [INFO] BaseClass - ===== Test Suite Execution Started =====
+[2025-09-18 16:33:35] [INFO] BaseClass - Configuration file loaded successfully.
+[2025-09-18 16:33:35] [INFO] BaseClass - Configuration file loaded successfully.
+[2025-09-18 16:33:35] [INFO] BaseClass - ===== Starting Test Setup =====
+[2025-09-18 16:33:35] [INFO] BaseClass - Launching application on browser: chrome
+[2025-09-18 16:33:41] [INFO] BaseClass - Application launched successfully at: http://www.automationpractice.pl/index.php?
+[2025-09-18 16:33:45] [INFO] BaseClass - ===== Closing Browser =====
+[2025-09-18 16:34:03] [INFO] BaseClass - ===== Test Suite Execution Started =====
+[2025-09-18 16:34:03] [INFO] BaseClass - Configuration file loaded successfully.
+[2025-09-18 16:34:03] [INFO] BaseClass - Configuration file loaded successfully.
+[2025-09-18 16:34:03] [INFO] BaseClass - ===== Starting Test Setup =====
+[2025-09-18 16:34:03] [INFO] BaseClass - Launching application on browser: chrome
+[2025-09-18 16:34:08] [INFO] BaseClass - Application launched successfully at: http://www.automationpractice.pl/index.php?
+[2025-09-18 16:34:18] [INFO] BaseClass - ===== Closing Browser =====
+[2025-09-18 16:34:52] [INFO] BaseClass - ===== Test Suite Execution Started =====
+[2025-09-18 16:34:52] [INFO] BaseClass - Configuration file loaded successfully.
+[2025-09-18 16:34:52] [INFO] BaseClass - Configuration file loaded successfully.
+[2025-09-18 16:34:52] [INFO] BaseClass - ===== Starting Test Setup =====
+[2025-09-18 16:34:52] [INFO] BaseClass - Launching application on browser: chrome
+[2025-09-18 16:34:59] [INFO] BaseClass - Application launched successfully at: http://www.automationpractice.pl/index.php?
+[2025-09-18 16:36:50] [INFO] BaseClass - ===== Closing Browser =====
+[2025-09-18 16:39:37] [INFO] BaseClass - ===== Test Suite Execution Started =====
+[2025-09-18 16:39:37] [INFO] BaseClass - Configuration file loaded successfully.
+[2025-09-18 16:39:37] [INFO] BaseClass - Configuration file loaded successfully.
+[2025-09-18 16:39:37] [INFO] BaseClass - ===== Starting Test Setup =====
+[2025-09-18 16:39:37] [INFO] BaseClass - Launching application on browser: chrome
+[2025-09-18 16:39:42] [INFO] BaseClass - Application launched successfully at: http://www.automationpractice.pl/index.php?
+[2025-09-18 16:39:42] [INFO] BaseClass - ===== Closing Browser =====

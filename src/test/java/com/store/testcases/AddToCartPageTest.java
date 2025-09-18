@@ -17,33 +17,24 @@ public class AddToCartPageTest extends BaseClass {
     SearchResultPage searchResultPage;
     AddToCartPage addToCartPage;
 
-    @BeforeMethod
-    public void setUp(){
-        launchApp();
-    }
-
-    @AfterMethod
-    public void tearDown(){
-        driver.quit();
-    }
 
     @Test
     public void validateAddToCartTest(){
 
-        homePage = new HomePage(driver);
+        homePage = new HomePage();
         homePage.searchProduct("Printed Summer Dress");
 
-        searchResultPage = new SearchResultPage(driver);
+        searchResultPage = new SearchResultPage();
 
         searchResultPage.ScrollOverProductByPixel();
         searchResultPage.HoverOverProduct();
         searchResultPage.clickOnProduct();
 
-        addToCartPage = new AddToCartPage(driver);
+        addToCartPage = new AddToCartPage();
 
         addToCartPage.selectSize(1);
         addToCartPage.selectColor();
-        addToCartPage.SelectQuanity("2");
+//        addToCartPage.SelectQuanity("2");
         addToCartPage.selectAddToCart();
 
         Assert.assertTrue(addToCartPage.validateCheckOutMessage());

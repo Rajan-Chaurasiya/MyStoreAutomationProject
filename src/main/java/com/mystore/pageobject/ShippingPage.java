@@ -6,8 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class ShippingPage extends BasePage{
-    public ShippingPage(WebDriver driver) {
-        super(driver);
+    public ShippingPage() {
+        super();
     }
 
     @FindBy(xpath = "//input[@id='cgv']")

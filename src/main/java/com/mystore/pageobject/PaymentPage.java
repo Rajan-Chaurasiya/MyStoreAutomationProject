@@ -7,8 +7,8 @@ import org.openqa.selenium.support.FindBy;
 
 public class PaymentPage extends BasePage{
 
-    public PaymentPage(WebDriver driver) {
-        super(driver);
+    public PaymentPage() {
+        super();
     }
 
     @FindBy(xpath = "//a[@title='Pay by bank wire']")

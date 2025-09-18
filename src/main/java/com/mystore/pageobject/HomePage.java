@@ -5,9 +5,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static com.mystore.base.BaseClass.getDriver;
+
 public class HomePage extends BasePage {
-    public HomePage(WebDriver driver) {
-        super(driver);
+    public HomePage() {
+        super();
     }
 
     @FindBy(xpath = "//input[@id='search_query_top']")
@@ -23,21 +25,21 @@ public class HomePage extends BasePage {
     WebElement SignInButton;
 
     public void clickOnSignIn(){
-        Action.click(driver, SignInButton);
+        Action.click(getDriver(), SignInButton);
 //        return new LoginPage();
     }
 
     public boolean validateStoreLogo(){
-        return Action.isDisplayed(driver, myStoreLogo);
+        return Action.isDisplayed(getDriver(), myStoreLogo);
     }
 
     public String getStoreTitle(){
-        return driver.getTitle();
+        return getDriver().getTitle();
     }
 
     public void searchProduct(String productName){
-        Action.type(driver, seachTextBox, productName);
-        Action.click(driver, searchButton);
+        Action.type(getDriver(), seachTextBox, productName);
+        Action.click(getDriver(), searchButton);
 //        return new SearchResultPage();
     }
 }

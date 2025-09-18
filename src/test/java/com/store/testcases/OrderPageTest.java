@@ -19,35 +19,26 @@ public class OrderPageTest extends BaseClass {
     AddToCartPage addToCartPage;
     OrderPage orderPage;
 
-    @BeforeMethod
-    public void setUp(){
-        launchApp();
-    }
-
-    @AfterMethod
-    public void tearDown(){
-        driver.quit();
-    }
 
     @Test
     public void verifyTotalPrice(){
 
-        homePage = new HomePage(driver);
+        homePage = new HomePage();
         homePage.searchProduct("Printed Summer Dress");
 
-        searchResultPage = new SearchResultPage(driver);
+        searchResultPage = new SearchResultPage();
         searchResultPage.ScrollOverProductByPixel();
         searchResultPage.HoverOverProduct();
         searchResultPage.clickOnProduct();
 
-        addToCartPage = new AddToCartPage(driver);
+        addToCartPage = new AddToCartPage();
         addToCartPage.selectSize(1);
         addToCartPage.selectColor();
         addToCartPage.SelectQuanity("2");
         addToCartPage.selectAddToCart();
         addToCartPage.validateCheckOuntConfirmationButton();
 
-        orderPage = new OrderPage(driver);
+        orderPage = new OrderPage();
         double unitprice = orderPage.unitPrice();
         double totalprice = orderPage.totalPrice();
         double totalExpectedPrice = (unitprice*2) + 7;

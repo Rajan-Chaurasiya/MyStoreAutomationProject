@@ -6,8 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class AddressPage extends BasePage{
-    public AddressPage(WebDriver driver) {
-        super(driver);
+    public AddressPage() {
+        super();
     }
 
     @FindBy(xpath = "//button[@name='processAddress']//span[contains(text(),'Proceed to checkout')]")

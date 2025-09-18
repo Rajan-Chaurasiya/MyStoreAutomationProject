@@ -6,8 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class AddToCartPage extends BasePage{
-    public AddToCartPage(WebDriver driver) {
-        super(driver);
+    public AddToCartPage() {
+        super();
     }
 
     @FindBy(xpath = "//input[@id='quantity_wanted']")

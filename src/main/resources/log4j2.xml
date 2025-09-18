@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration status="INFO">
+    <Properties>
+        <Property name="basePath">./Logs</Property>
+
+    </Properties>
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+
+
+    <!-- Rolling File Appender (new file every day, keep last 7) -->
+    <RollingFile name="RollingFileLogger"
+                 fileName="logs/automation.log"
+                 filePattern="logs/automation-%d{yyyy-MM-dd}.log.gz">
+        <PatternLayout>
+            <Pattern>[%d{yyyy-MM-dd HH:mm:ss}] [%p] %c{1} - %m%n</Pattern>
+        </PatternLayout>
+        <Policies>
+            <!-- roll every day -->
+            <TimeBasedTriggeringPolicy interval="1"/>
+        </Policies>
+        <DefaultRolloverStrategy max="7"/>
+    </RollingFile>
+
+    </Appenders>
+
+    <Loggers>
+
+        <!-- Project package logging -->
+        <Logger name="com.mystore" level="info" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="FileLogger"/>
+            <AppenderRef ref="RollingFileLogger"/>
+        </Logger>
+
+        <root level = "info">
+<!--            <priority value ="debug"/>-->
+            <appender-ref ref="Console"/>
+<!--            <appender-ref ref="File"/>-->
+        </root>
+    </Loggers>
+</Configuration>

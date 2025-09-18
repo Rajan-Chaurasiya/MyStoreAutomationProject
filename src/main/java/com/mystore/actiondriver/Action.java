@@ -74,7 +74,7 @@ public class Action extends BaseClass {
 
     public static void selectByValue(WebElement element, String value){
 
-        Select select = new Select(waitForElement(driver, element));
+        Select select = new Select(element);
         select.selectByValue(value);
     }
 
@@ -115,22 +115,16 @@ public class Action extends BaseClass {
         js.executeScript("arguments[0].scrollIntoView();",element);
     }
 
-    public static boolean findElement(WebDriver driver, WebElement element){
-
-        boolean flag = false;
+    public static WebElement waitForElement(WebDriver driver, WebElement element, int timeoutInSeconds) {
         try {
-            element.isDisplayed();
-            flag = true;
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+            WebElement webElement = wait.until(ExpectedConditions.visibilityOf(element));
+            System.out.println("Element found: " + webElement.toString());
+            return element;
         } catch (Exception e) {
-            flag = false;
-        }finally {
-            if (flag){
-                System.out.println("Successfully found the element at");
-            }else {
-                System.out.println("Unable to locate the element at");
-            }
+            System.out.println("Element not found: " + element.toString());
+            return null;
         }
-        return flag;
     }
 
     // check if element is displayed

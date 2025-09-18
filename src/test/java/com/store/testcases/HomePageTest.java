@@ -10,26 +10,17 @@ import org.testng.annotations.Test;
 public class HomePageTest extends BaseClass {
     HomePage homePage;
 
-    @BeforeMethod
-    public void setUp(){
-        launchApp();
-    }
-
-    @AfterMethod
-    public void tearDown(){
-        driver.quit();
-    }
 
     @Test
     public void validateLogo(){
-        homePage = new HomePage(driver);
+        homePage = new HomePage();
         boolean result = homePage.validateStoreLogo();
         Assert.assertTrue(result);
     }
 
     @Test
     public void validateHomePageTitle(){
-        homePage = new HomePage(driver);
+        homePage = new HomePage();
         String storeTitle = homePage.getStoreTitle();
         Assert.assertEquals(storeTitle, "My Shop");
     }

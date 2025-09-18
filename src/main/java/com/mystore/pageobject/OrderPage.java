@@ -6,8 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class OrderPage extends BasePage{
-    public OrderPage(WebDriver driver) {
-        super(driver);
+    public OrderPage() {
+        super();
     }
 
     @FindBy(xpath = "//li[@class='price special-price']")

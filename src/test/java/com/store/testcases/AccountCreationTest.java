@@ -18,29 +18,20 @@ public class AccountCreationTest extends BaseClass {
     LoginPage loginPage;
     AccountCreationPage accountCreationPage;
 
-    @BeforeMethod
-    public void setUp(){
-        launchApp();
-    }
-
-    @AfterMethod
-    public void tearDown(){
-        driver.quit();
-    }
 
     @Test
     public void AccountCreationPageTest(){
-        homePage = new HomePage(driver);
+        homePage = new HomePage();
         homePage.clickOnSignIn();
 
-        loginPage = new LoginPage(driver);
+        loginPage = new LoginPage();
         String loginPageCurrentUrl = loginPage.getCurrentUrl();
         String ExpectedResult = "http://www.automationpractice.pl/index.php?controller=authentication&back=my-account";
         Assert.assertEquals(loginPageCurrentUrl, ExpectedResult);
 
         loginPage.createNewAccount(randomAlphaNumberic());
 
-        accountCreationPage = new AccountCreationPage(driver);
+        accountCreationPage = new AccountCreationPage();
 
         Assert.assertTrue(accountCreationPage.validateAccountCreatePage());
 

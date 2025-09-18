@@ -6,8 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class SearchResultPage extends BasePage{
-    public SearchResultPage(WebDriver driver) {
-        super(driver);
+    public SearchResultPage() {
+        super();
     }
 
     @FindBy(xpath = "(//img[@title='Printed Summer Dress'])[1]")

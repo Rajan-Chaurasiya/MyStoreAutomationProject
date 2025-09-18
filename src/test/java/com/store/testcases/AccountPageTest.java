@@ -15,25 +15,16 @@ public class AccountPageTest extends BaseClass {
     LoginPage loginPage;
     AccountPage accountPage;
 
-    @BeforeMethod
-    public void setUp(){
-        launchApp();
-    }
-
-    @AfterMethod
-    public void tearDown(){
-        driver.quit();
-    }
 
     @Test
     public void validateMyAccount(){
-        homePage = new HomePage(driver);
+        homePage = new HomePage();
         homePage.clickOnSignIn();
 
-        loginPage = new LoginPage(driver);
+        loginPage = new LoginPage();
         loginPage.login(prop.getProperty("username"),prop.getProperty("password"));
 
-        accountPage = new AccountPage(driver);
+        accountPage = new AccountPage();
         String expectedUrl = "http://www.automationpractice.pl/index.php?controller=my-account";
         String actualUrl = accountPage.getCurrentUrl();
 

@@ -7,9 +7,11 @@ import org.openqa.selenium.support.FindBy;
 
 import java.security.cert.X509Certificate;
 
+import static com.mystore.base.BaseClass.getDriver;
+
 public class AccountCreationPage extends BasePage{
-    public AccountCreationPage(WebDriver driver) {
-        super(driver);
+    public AccountCreationPage() {
+        super();
     }
 
     @FindBy(xpath = "//h1[normalize-space()='Create an account']")

@@ -15,23 +15,13 @@ public class LoginPageTest extends BaseClass {
     HomePage homePage;
     LoginPage loginPage;
 
-    @BeforeMethod
-    public void setUp(){
-        launchApp();
-    }
-
-    @AfterMethod
-    public void tearDown(){
-        driver.quit();
-    }
-
     @Test
     public void loginTest(){
 
-        homePage = new HomePage(driver);
+        homePage = new HomePage();
         homePage.clickOnSignIn();
 
-        loginPage = new LoginPage(driver);
+        loginPage = new LoginPage();
 
         String loginPageCurrentUrl = loginPage.getCurrentUrl();
         String ExpectedResult = "http://www.automationpractice.pl/index.php?controller=authentication&back=my-account";
